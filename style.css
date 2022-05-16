@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(27, 27, 27);
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 50px;
+    background-color: rgb(27, 27, 27);
+}
+.slider {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slider-line {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.dots {
+    text-align: center;
+}
+.dots_item{
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: rgb(59, 125, 212);
+    border: 2px rgb(59, 125, 212) solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+
+.active {
+    background-color: rgb(255, 255, 255, 0);
+    border: 2px rgb(59, 125, 212) solid;
+}
+
+.dots_item:hover {
+    background-color: white;
+    border: 2px white solid;
+}
+
+.active:hover {
+    border: 2px white solid;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-comment {
+    height: 20px;
+    overflow: hidden;
+}
+
+.comment {
+    color: white;
+}
+.run-animation {
+    animation: my-animation 2s;
+}
+
+@keyframes my-animation {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
