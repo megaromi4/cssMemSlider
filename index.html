@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slider">
+            <div class="slider-line">
+                <img class="image" id="set" src="assets\mem1.webp" alt="memasik">
+                <img class="image" src="assets\mem2.webp" alt="memasik">
+                <img class="image" src="assets\mem3.webp" alt="memasik">
+                <img class="image" src="assets\mem4.webp" alt="memasik">
+            </div>
+        </div>
+        <div class="description">
+            <div class="wrapper-comment">
+                <div class="comment">Засиделся на работе</div>
+            </div>
+            <div class="dots">
+                <span class="dots_item active" onclick="currentSlide(1)"></span>
+                <span class="dots_item" onclick="currentSlide(2)"></span>
+                <span class="dots_item" onclick="currentSlide(3)"></span>
+                <span class="dots_item" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
