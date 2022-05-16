@@ -72,3 +72,13 @@ body {
     0% { opacity:0; }
     100% { opacity:1; }
 }
+
+@media(max-width: 720px) {
+    .description {
+        flex-direction: column-reverse;
+    }
+
+    .dots {
+        margin-bottom: 10px;
+    }
+}
